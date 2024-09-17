@@ -1,7 +1,3 @@
-# itp
- ## Bryce
- ### Davis
-
 # Week 2 - Scratch
 
 #### My objective with this Scratch program was to create a function/animation of a basketball being shot into a hoop. 
