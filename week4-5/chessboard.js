@@ -5,10 +5,17 @@ let size = prompt("Enter size.")
 
 if (size > 0) {
     for (let s = 1; s <= size; s++) {
-        console.log(hashodd.repeat(size/2));
-        console.log(hasheven.repeat(size/2));
+        if (s % 2 !== 0) {
+            console.log(hashodd.repeat(size/2));
+        }
+            else {
+                console.log(hasheven.repeat(size/2));
+            }
     }
 }
+    else {
+        window.alert("Not a valid number.");
+    }
 
 
 
@@ -22,3 +29,8 @@ const hashodd = ' #';
 const hasheven = '# ';
 
 const hash = ' #';
+
+{
+    console.log(hashodd.repeat(size/2));
+    console.log(hasheven.repeat(size/2));
+}
