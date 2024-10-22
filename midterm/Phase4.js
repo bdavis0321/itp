@@ -1,5 +1,5 @@
-const canv = 1400;
-const grid = 10;
+const canv = 1400;  // Input canvas size
+const grid = 10;    // Input grid subdivision
 
 const ogw = 140;
 const ogh = 103;
