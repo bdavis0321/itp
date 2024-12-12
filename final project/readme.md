@@ -47,5 +47,4 @@ Now, the Teams and Games pages work almost the exact same as the Players page. F
 The Games page is currently very tricky to use as you need to know the IDs of the two teams (between 1 and 30), and you need to know the exact date that game happened on. I was working on a feature which listed every game a team played during a given season, and although I was able to pull that data from the API, displaying it was very challenging, and many times the request timed out because of just how long it was taking. However, I'm confident I will find away to implement that feature very soon.
 
 
-
 Although I wasn't able to reach the goals I set during my final project proposal, I still found that this project was a big learning experience for me, not just in programming but problem solving in general. There were many times in this process where I was just stumped on getting something to work or finding the single line of code that was breaking the entire thing, but I learned a lot from those moments.
