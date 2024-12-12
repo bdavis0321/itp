@@ -32,6 +32,7 @@ Now, we can call the players season stat averages using the ID we got before. Th
 ![](img/callstats.png)
 ![](img/dataarray1.png)
 
-At this point, I ran into an incredibly annoying issue which I still don't completely understand the reason for. For some reason, when the data is returned by season, the seasons are listed out of order, as you can see in the image. Thankfully it's correctly organized by year but they aren't being returned in the right order. For this reason, I needed to find away to sort all of the stats based solely on the season, not mixing them up in the process. To do this, I essentially made it so that the year and stats that follow are two separate indexes, and that after the years index is sorted chronologically, the 'stats' index is mapped to the years. 
+At this point, I ran into an incredibly annoying issue which I still don't completely understand the reason for. For some reason, when the data is returned by season, the seasons are listed out of order, as you can see in the image. Thankfully it's correctly organized by year but they aren't being returned in the right order. For this reason, I needed to find away to sort all of the stats based solely on the season, not mixing them up in the process. To do this, I essentially made it so that the year and stats that follow are two separate indexes, and that after the years index is sorted chronologically, the 'stats' index is mapped to the years. Originally, I had it so that each individual stat was being mapped to the years index which did NOT look pretty and took wayyyy longer, but Maxwell showed me a way I could optimize it to not take up nearly as much space (and be easier on the eyes lol). 
 
-![](img/sort1.png)
+![](img/sortold.png)
+![](img/sortnew.png)
