@@ -36,3 +36,8 @@ At this point, I ran into an incredibly annoying issue which I still don't compl
 
 ![](img/sortold.png)
 ![](img/sortnew.png)
+
+After this, all of the stats are placed into the table that we started before. At this point, the process of getting all the data can take quite a long time, and I was running into the issue of the page loading sooner than the API has time to respond with all of the data, so a timeout function was needed to wait until all of the data has been receieved. In this case, 5000 ms seemed to be the right amount of time.
+
+![](img/stattable.png)
+![](img/stattable2.png)
