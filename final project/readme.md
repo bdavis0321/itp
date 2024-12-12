@@ -37,7 +37,15 @@ At this point, I ran into an incredibly annoying issue which I still don't compl
 ![](img/sortold.png)
 ![](img/sortnew.png)
 
-After this, all of the stats are placed into the table that we started before. At this point, the process of getting all the data can take quite a long time, and I was running into the issue of the page loading sooner than the API has time to respond with all of the data, so a timeout function was needed to wait until all of the data has been receieved. In this case, 5000 ms seemed to be the right amount of time.
+After this, all of the stats are placed into the table that we started before. At this point, the process of getting all the data can take quite a long time, and I was running into the issue of the page loading sooner than the API has time to respond with all of the data (especially players with long careers ie. Lebron James or Vince Carter), so a timeout function was needed to wait until all of the data has been receieved. In this case, 5000 ms seemed to be the right amount of time.
 
 ![](img/stattable.png)
 ![](img/stattable2.png)
+
+Now, the Teams and Games pages work almost the exact same as the Players page. For Teams, since there's only 30 NBA teams, I got rid of a 'team.html' page entirely and you just select the team you want from the drop down in the navbar. The team pages are currently very light, but I eventually want to incorporate a feature that lists all current active players from that team, and clicking on them brings you to their respective player page with their season averages chart.
+
+The Games page is currently very tricky to use as you need to know the IDs of the two teams (between 1 and 30), and you need to know the exact date that game happened on. I was working on a feature which listed every game a team played during a given season, and although I was able to pull that data from the API, displaying it was very challenging, and many times the request timed out because of just how long it was taking. However, I'm confident I will find away to implement that feature very soon.
+
+
+
+Although I wasn't able to reach the goals I set during my final project proposal, I still found that this project was a big learning experience for me, not just in programming but problem solving in general. There were many times in this process where I was just stumped on getting something to work or finding the single line of code that was breaking the entire thing, but I learned a lot from those moments.
