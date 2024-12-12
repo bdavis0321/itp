@@ -26,3 +26,12 @@ Then, we begin to construct the results page with HTML, listing the basic info a
 
 ![](img/pstat1.png)
 ![](img/basicdata1.png)
+
+Now, we can call the players season stat averages using the ID we got before. This time, it's done season by season, so it's being run in a loop. It responds the same way as before, although this time it's given in an array. 
+
+![](img/callstats.png)
+![](img/dataarray1.png)
+
+At this point, I ran into an incredibly annoying issue which I still don't completely understand the reason for. For some reason, when the data is returned by season, the seasons are listed out of order, as you can see in the image. Thankfully it's correctly organized by year but they aren't being returned in the right order. For this reason, I needed to find away to sort all of the stats based solely on the season, not mixing them up in the process. To do this, I essentially made it so that the year and stats that follow are two separate indexes, and that after the years index is sorted chronologically, the 'stats' index is mapped to the years. 
+
+![](img/sort1.png)
