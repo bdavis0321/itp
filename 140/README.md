@@ -1,0 +1,11 @@
+My goal for the 140 character assignment was to create a programmable funky, syncopated drum pattern, inspired by the drum sounds from 8-bit consoles like the NES or Master System.
+
+At the beginning of the project, I was exploring the idea of using sample playback for the drums, but I quickly realized how challenging that would be for me to implement within the 140-character limit. I looked to how the original 8-bit consoles use basic subtractive synthesis with square waves and white noise to create rhythmic patterns. My "snare" would be gated white noise, and the "kick drum" is a triangle wave with pitch modulation.
+
+Starting with the white noise pattern, the noise is being gated by an LFPulse oscillator. The frequency is 8, which at 120 BPM is the same as a 16th note. The width of each white noise pulse is being controlled by ANOTHER LFPulse oscillator, which with the frequency at 3 creates a 3 over 2 polyrhythm. The phase is offset at 0, but both of these variables can be changed to create different rhythms. On top of this, the width is also controlled by the cursor position on the X axis, adding anywhere from 0.05 to 0.7 to the width. 
+
+The kick is created using an LFTri oscillator, the frequency of which is being modulated by an LFSaw oscillator. Similar to how kick drums were synthesized on drum machines (like the TR-909), it's shaped with a quick high to low frequency slope, and in this case, the LFSaw shape was perfect for this. The frequency of this LFSaw is being modulated with an LFPulse to create the syncopated rhythm by changing the length of "kick" transient. The width of this pulse is also being controlled with the cursor using the Y axis.
+
+Combined, these two sequences create a funky beat which can be controlled using the cursor, or changing a few of the variables. There are a few issues that I can't seem to find a way around. For one, the kick seems to be delayed when the LFPulse width is higher, and I can't think of a reason why that would be. This makes the two sounds not as locked in as I would like them to be. 
+
+Overall, although there are a few things I wish I could've found a way to polish, I feel happy with what I was able to do using the 140-character limit available to me. I was forced to get a bit creative with syntax at points, but as they say, limitations breed creativity. 

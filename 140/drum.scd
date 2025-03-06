@@ -1,0 +1,1 @@
+play{(WhiteNoise.ar(LFPulse.ar(8,0,LFPulse.ar(3,3)/4+MouseX.kr(0.05,0.7)))/8)+LFTri.ar(LFSaw.ar(LFPulse.ar(1)*1+2,1,MouseY.kr(0,-160),40))!5}
