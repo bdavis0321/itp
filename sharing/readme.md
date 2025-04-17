@@ -1,0 +1,1 @@
+My proposal for my final project is a program with an interface that allows the user to program drum and bassline patterns and control the sends to reggae/dub-style tape delay and reverb.
